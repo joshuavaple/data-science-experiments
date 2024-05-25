@@ -1,0 +1,11 @@
+python-dotenv==1.0.1
+pandas==2.1.4
+scikit-learn==1.4.0
+mlflow==2.9.2
+ipykernel==6.29.0
+langchain==0.2.1
+langchain-openai==0.1.7
+langchain-mistralai==0.1.7
+langchain-community==0.2.1
+openai>=1.24.0
+black[jupyter]
