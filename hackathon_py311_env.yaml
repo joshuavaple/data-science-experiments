@@ -1,0 +1,33 @@
+name: hackathon-py311-env
+channels:
+- conda-forge
+- anaconda
+dependencies:
+- python=3.11.7
+- pyyaml==6.0
+- azure-ai-formrecognizer==3.2.1
+- azure-search-documents==11.3.0
+- azure-storage-blob==12.17.0
+- pandas==1.0.5
+- numpy==1.22.0
+- openpyxl==3.1.2
+- nltk==3.7
+- openai==0.27.2
+- gensim==4.2.0
+- scikit-learn==1.2.2
+- jupyterlab==3.6.3
+- black==23.3.0
+- isort==5.12.0
+- flake8==6.0.0
+- ipywidgets==8.0.6
+- fsspec==2023.6.0
+- tiktoken==0.5.1
+- azure-core==1.27.1
+- azure-identity==1.13.0
+- azure-keyvault-secrets==4.7.0
+- validators==0.20.0
+- langchain==0.0.281
+- azure-data-tables==12.4.0
+- streamlit==1.25.0
+- streamlit-authenticator==0.2.2
+- streamlit-chat==0.1.1
