@@ -1,0 +1,29 @@
+{
+    "autoscale": {
+        "min_workers": 1,
+        "max_workers": 1
+    },
+    "cluster_name": "13.3-LTS-ML",
+    "spark_version": "13.3.x-cpu-ml-scala2.12",
+    "spark_conf": {},
+    "azure_attributes": {
+        "first_on_demand": 1,
+        "availability": "SPOT_WITH_FALLBACK_AZURE",
+        "spot_bid_max_price": -1
+    },
+    "node_type_id": "Standard_D4ads_v5",
+    "driver_node_type_id": "Standard_D4ads_v5",
+    "ssh_public_keys": [],
+    "custom_tags": {},
+    "spark_env_vars": {},
+    "autotermination_minutes": 30,
+    "enable_elastic_disk": true,
+    "init_scripts": [],
+    "single_user_name": "phuonglevu3112@gmail.com",
+    "enable_local_disk_encryption": false,
+    "data_security_mode": "SINGLE_USER",
+    "runtime_engine": "STANDARD",
+    "effective_spark_version": "13.3.x-cpu-ml-scala2.12",
+    "assigned_principal": "user:phuonglevu3112@gmail.com",
+    "cluster_id": "0228-025440-wvjyexde"
+}
