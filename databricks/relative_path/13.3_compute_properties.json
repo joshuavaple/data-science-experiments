@@ -1,0 +1,101 @@
+{
+    "cluster_id": "0315-004353-5n8bop0i",
+    "creator_user_name": "admin-jjchin@globalpsa.com",
+    "spark_context_id": 1253299325035883000,
+    "driver_healthy": true,
+    "cluster_name": "CORP_GPU_ML_DFE_JOSHUA",
+    "spark_version": "13.3.x-gpu-ml-scala2.12",
+    "spark_conf": {
+        "spark.databricks.cluster.profile": "singleNode",
+        "spark.master": "local[*,4]"
+    },
+    "azure_attributes": {
+        "first_on_demand": 1,
+        "availability": "ON_DEMAND_AZURE",
+        "spot_bid_max_price": -1
+    },
+    "node_type_id": "Standard_NC4as_T4_v3",
+    "driver_node_type_id": "Standard_NC4as_T4_v3",
+    "custom_tags": {
+        "Compute Type": "All Purpose GPU",
+        "BU Cost Recovery": "DFE",
+        "Tier": "CORP",
+        "ResourceClass": "SingleNode"
+    },
+    "autotermination_minutes": 15,
+    "enable_elastic_disk": true,
+    "disk_spec": {},
+    "cluster_source": "UI",
+    "single_user_name": "joshuale@globalpsa.com",
+    "policy_id": "001EEEAA6AF5F7E0",
+    "enable_local_disk_encryption": false,
+    "instance_source": {
+        "node_type_id": "Standard_NC4as_T4_v3"
+    },
+    "driver_instance_source": {
+        "node_type_id": "Standard_NC4as_T4_v3"
+    },
+    "data_security_mode": "SINGLE_USER",
+    "runtime_engine": "STANDARD",
+    "effective_spark_version": "13.3.x-gpu-ml-scala2.12",
+    "assigned_principal": "user:joshuale@globalpsa.com",
+    "state": "TERMINATED",
+    "state_message": "Inactive cluster terminated (inactive for 16 minutes).",
+    "start_time": 1710463433962,
+    "terminated_time": 1740629384115,
+    "last_state_loss_time": 1740627277023,
+    "last_activity_time": 1740627314097,
+    "last_restarted_time": 1740627277062,
+    "num_workers": 0,
+    "default_tags": {
+        "Vendor": "Databricks",
+        "Creator": "admin-jjchin@globalpsa.com",
+        "ClusterName": "CORP_GPU_ML_DFE_JOSHUA",
+        "ClusterId": "0315-004353-5n8bop0i",
+        "Department": "DFE",
+        "project": "gdap",
+        "PSAI-BU": "DFE",
+        "PSAI-Project": "GDAP"
+    },
+    "termination_reason": {
+        "code": "INACTIVITY",
+        "type": "SUCCESS",
+        "parameters": {
+            "inactivity_duration_min": "16"
+        }
+    },
+    "pinned_by_user_name": "211338539516870",
+    "init_scripts_safe_mode": false,
+    "spec": {
+        "cluster_name": "CORP_GPU_ML_DFE_JOSHUA",
+        "spark_version": "13.3.x-gpu-ml-scala2.12",
+        "spark_conf": {
+            "spark.databricks.cluster.profile": "singleNode",
+            "spark.master": "local[*,4]"
+        },
+        "azure_attributes": {
+            "first_on_demand": 1,
+            "availability": "ON_DEMAND_AZURE",
+            "spot_bid_max_price": -1
+        },
+        "node_type_id": "Standard_NC4as_T4_v3",
+        "driver_node_type_id": "Standard_NC4as_T4_v3",
+        "custom_tags": {
+            "Compute Type": "All Purpose GPU",
+            "BU Cost Recovery": "DFE",
+            "Tier": "CORP",
+            "ResourceClass": "SingleNode"
+        },
+        "autotermination_minutes": 15,
+        "enable_elastic_disk": true,
+        "single_user_name": "joshuale@globalpsa.com",
+        "policy_id": "001EEEAA6AF5F7E0",
+        "enable_local_disk_encryption": false,
+        "data_security_mode": "SINGLE_USER",
+        "runtime_engine": "STANDARD",
+        "effective_spark_version": "13.3.x-gpu-ml-scala2.12",
+        "assigned_principal": "user:joshuale@globalpsa.com",
+        "num_workers": 0,
+        "apply_policy_default_values": false
+    }
+}

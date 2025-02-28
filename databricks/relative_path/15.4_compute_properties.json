@@ -1,0 +1,98 @@
+{
+    "cluster_id": "1220-031943-egxsl7z2",
+    "creator_user_name": "admin-jjchin@globalpsa.com",
+    "spark_context_id": 5646317455116831000,
+    "driver_healthy": true,
+    "cluster_name": "CORP_CPU_STD_DFE_SPENDANALYSIS",
+    "spark_version": "15.4.x-cpu-ml-scala2.12",
+    "azure_attributes": {
+        "first_on_demand": 1,
+        "availability": "SPOT_WITH_FALLBACK_AZURE",
+        "spot_bid_max_price": -1
+    },
+    "node_type_id": "Standard_D4ds_v5",
+    "driver_node_type_id": "Standard_D4ds_v5",
+    "custom_tags": {
+        "Compute Type": "All Purpose",
+        "BU Cost Recovery": "DFE",
+        "Tier": "CORP"
+    },
+    "autotermination_minutes": 30,
+    "enable_elastic_disk": true,
+    "disk_spec": {},
+    "cluster_source": "UI",
+    "single_user_name": "GDAP-DATASCIENTIST-CORP",
+    "policy_id": "000DB205AE47049F",
+    "enable_local_disk_encryption": false,
+    "instance_source": {
+        "node_type_id": "Standard_D4ds_v5"
+    },
+    "driver_instance_source": {
+        "node_type_id": "Standard_D4ds_v5"
+    },
+    "workload_type": {
+        "clients": {
+            "notebooks": true,
+            "jobs": true
+        }
+    },
+    "data_security_mode": "SINGLE_USER",
+    "runtime_engine": "STANDARD",
+    "effective_spark_version": "15.4.x-cpu-ml-scala2.12",
+    "assigned_principal": "group:GDAP-DATASCIENTIST-CORP",
+    "state": "TERMINATED",
+    "state_message": "Inactive cluster terminated (inactive for 30 minutes).",
+    "start_time": 1734664783664,
+    "terminated_time": 1740630265925,
+    "last_state_loss_time": 1740625969795,
+    "last_activity_time": 1740625913891,
+    "last_restarted_time": 1740625969858,
+    "autoscale": {
+        "min_workers": 1,
+        "max_workers": 4,
+        "target_workers": 1
+    },
+    "default_tags": {
+        "Vendor": "Databricks",
+        "Creator": "admin-jjchin@globalpsa.com",
+        "ClusterName": "CORP_CPU_STD_DFE_SPENDANALYSIS",
+        "ClusterId": "1220-031943-egxsl7z2",
+        "Department": "DFE",
+        "PSAI-BU": "DFE",
+        "PSAI-Project": "GDAP",
+        "project": "gdap"
+    },
+    "termination_reason": {
+        "code": "INACTIVITY",
+        "type": "SUCCESS",
+        "parameters": {
+            "inactivity_duration_min": "30"
+        }
+    },
+    "pinned_by_user_name": "211338539516870",
+    "init_scripts_safe_mode": false,
+    "spec": {
+        "cluster_name": "CORP_CPU_STD_DFE_SPENDANALYSIS",
+        "spark_version": "15.4.x-cpu-ml-scala2.12",
+        "azure_attributes": {
+            "first_on_demand": 1,
+            "availability": "SPOT_WITH_FALLBACK_AZURE",
+            "spot_bid_max_price": -1
+        },
+        "node_type_id": "Standard_D4ds_v5",
+        "driver_node_type_id": "Standard_D4ds_v5",
+        "custom_tags": {
+            "Compute Type": "All Purpose",
+            "BU Cost Recovery": "DFE",
+            "Tier": "CORP"
+        },
+        "autotermination_minutes": 30,
+        "enable_elastic_disk": true,
+        "single_user_name": "GDAP-DATASCIENTIST-CORP",
+        "policy_id": "000DB205AE47049F",
+        "enable_local_disk_encryption": false,
+        "workload_type": {
+            "clients": {
+                "notebooks": true,
+                "jobs": true
+            }
