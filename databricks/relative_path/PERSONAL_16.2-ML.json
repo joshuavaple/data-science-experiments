@@ -1,0 +1,82 @@
+{
+    "cluster_id": "0228-024233-amg13qby",
+    "creator_user_name": "phuonglevu3112@gmail.com",
+    "spark_context_id": 4151528105290703400,
+    "driver_healthy": true,
+    "cluster_name": "16.2-ML",
+    "spark_version": "16.2.x-cpu-ml-scala2.12",
+    "azure_attributes": {
+        "first_on_demand": 1,
+        "availability": "SPOT_WITH_FALLBACK_AZURE",
+        "spot_bid_max_price": -1
+    },
+    "node_type_id": "Standard_D4ads_v5",
+    "driver_node_type_id": "Standard_D4ads_v5",
+    "autotermination_minutes": 30,
+    "enable_elastic_disk": true,
+    "disk_spec": {},
+    "cluster_source": "UI",
+    "single_user_name": "phuonglevu3112@gmail.com",
+    "enable_local_disk_encryption": false,
+    "instance_source": {
+        "node_type_id": "Standard_D4ads_v5"
+    },
+    "driver_instance_source": {
+        "node_type_id": "Standard_D4ads_v5"
+    },
+    "data_security_mode": "SINGLE_USER",
+    "runtime_engine": "STANDARD",
+    "effective_spark_version": "16.2.x-cpu-ml-scala2.12",
+    "assigned_principal": "user:phuonglevu3112@gmail.com",
+    "state": "TERMINATED",
+    "state_message": "Termination requested by phuonglevu3112@gmail.com",
+    "start_time": 1740710553997,
+    "terminated_time": 1740711635435,
+    "last_state_loss_time": 1740711309387,
+    "last_activity_time": 1740711357356,
+    "last_restarted_time": 1740711309445,
+    "autoscale": {
+        "min_workers": 1,
+        "max_workers": 1,
+        "target_workers": 1
+    },
+    "default_tags": {
+        "Vendor": "Databricks",
+        "Creator": "phuonglevu3112@gmail.com",
+        "ClusterName": "16.2-ML",
+        "ClusterId": "0228-024233-amg13qby",
+        "ms-resource-usage": ""
+    },
+    "termination_reason": {
+        "code": "USER_REQUEST",
+        "type": "SUCCESS",
+        "parameters": {
+            "username": "phuonglevu3112@gmail.com"
+        }
+    },
+    "init_scripts_safe_mode": false,
+    "spec": {
+        "cluster_name": "16.2-ML",
+        "spark_version": "16.2.x-cpu-ml-scala2.12",
+        "azure_attributes": {
+            "first_on_demand": 1,
+            "availability": "SPOT_WITH_FALLBACK_AZURE",
+            "spot_bid_max_price": -1
+        },
+        "node_type_id": "Standard_D4ads_v5",
+        "driver_node_type_id": "Standard_D4ads_v5",
+        "autotermination_minutes": 30,
+        "enable_elastic_disk": true,
+        "single_user_name": "phuonglevu3112@gmail.com",
+        "enable_local_disk_encryption": false,
+        "data_security_mode": "SINGLE_USER",
+        "runtime_engine": "STANDARD",
+        "effective_spark_version": "16.2.x-cpu-ml-scala2.12",
+        "assigned_principal": "user:phuonglevu3112@gmail.com",
+        "autoscale": {
+            "min_workers": 1,
+            "max_workers": 1
+        },
+        "apply_policy_default_values": false
+    }
+}
