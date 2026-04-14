@@ -1,0 +1,16 @@
+ms_foundry:
+  AZURE_OPENAI_CHAT_DEPLOYMENT_NAME: gpt-4o
+  AZURE_OPENAI_API_VERSION: "2024-10-21"
+  MODEL_VERSION: "2024-11-20"
+  TEMPERATURE: "0"
+
+secret_scope:
+  name: corp_datascience_groupsafety
+  azure_openai_endpoint: gbic_azure_openai_endpoint
+  azure_openai_api_key: gbic_azure_openai_api_key
+  sp_client_id: sp_client_id
+  sp_client_secret: sp_client_secret
+
+databricks_llm:
+  name: databricks-claude-sonnet-4-6
+  temperature: "0"
