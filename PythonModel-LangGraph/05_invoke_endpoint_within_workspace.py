@@ -36,7 +36,7 @@ payload = """
 }
 """
 
-TOKEN = generate_internal_token()
-endpoint_url = 'https://adb-3015228593989975.15.azuredatabricks.net/serving-endpoints/gdata_aiworkflowdemo_accident_analysis/invocations'
+TOKEN = generate_internal_token() # ambient user's token from notebook context
+endpoint_url = 'https://adb-3015228593989975.15.azuredatabricks.net/serving-endpoints/personal_aiworkflowdemo_accident_analysis/invocations'
 
 score_model(endpoint_url=endpoint_url, data_json=payload, access_token=TOKEN)

@@ -33,7 +33,7 @@ project_model_name = f"{project_name}_model_{model_name}"
 registered_model_name = f"{catalog}.{schema_model}.{project_model_name}"
 
 # Endpoint Name
-endpoint_name = f"gdata_{project_name}_{model_name}"
+endpoint_name = f"personal_{project_name}_{model_name}"
 
 # Endpoint config
 alias_deployed_model = "champion"
