@@ -23,9 +23,6 @@ os.environ["AZURE_OPENAI_API_KEY"] = dbutils.secrets.get(scope=SECRET_SCOPE, key
 
 # COMMAND ----------
 
-# async
-import asyncio
-
 # langgraph:
 import operator
 from langgraph.types import Send
@@ -40,10 +37,6 @@ from langchain_openai.chat_models.azure import AzureChatOpenAI
 
 # mlflow
 import mlflow
-from mlflow.pyfunc import PythonModel
-from mlflow.tracing import set_destination
-from mlflow.entities import SpanType
-from mlflow.entities.trace_location import MlflowExperimentLocation
 
 # runtime env
 import logging
@@ -121,14 +114,14 @@ chain = prompt_template | llm_client.with_structured_output(
 
 input_text = "On 2026-02-09 at approximately 14:30, a Toyota RAV4 (plate number ABC123) collided with a large truck (plate number XYZ456) on the Express 101. The accident resulted in minor injuries to the driver of the Toyota RAV4. Emergency services responded promptly, and no fatalities were reported."
 output = chain.invoke({"input_text": input_text})
-output
+output.model_dump()
 
 # COMMAND ----------
 
 # without the `.with_structured_output`, the chain returns the usual AI message from the chat model
 chain_unstructured = prompt_template | llm_client
 output = chain_unstructured.invoke({"input_text": input_text})
-output
+output.model_dump() # AI message has content and other metadata
 
 # COMMAND ----------
 

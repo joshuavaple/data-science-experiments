@@ -1,17 +1,11 @@
 # Databricks notebook source
-# %pip install --upgrade "mlflow[databricks]" "databricks-connect>=16.1" "python-dotenv==1.1.1" "langchain>=1.2" "langchain-openai" "langchain-community" "langgraph>=1.0" "grandalf" "backoff>=2.2.0" "uv" "databricks-agents" "python-dotenv==1.1.1" -q
-
-# COMMAND ----------
-
 # MAGIC %pip install --upgrade "mlflow[databricks]" "langchain>=1.2" "langchain-openai" "langgraph>=1.0" "grandalf" "backoff>=2.2.0" "uv" -q
 # MAGIC %restart_python
 
 # COMMAND ----------
 
 import mlflow
-from pkg_resources import get_distribution
 import os
-from databricks.sdk import WorkspaceClient
 
 
 os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT_NAME"] = "gpt-4o"

@@ -57,6 +57,8 @@ from mlflow.entities.trace_location import MlflowExperimentLocation
 import logging
 import os
 
+# displaying graph nicely (optional)
+from IPython.display import Image, display
 
 
 llm_client = AzureChatOpenAI(
@@ -303,7 +305,7 @@ class AccidentAnalysisGraph:
 
     async def ainvoke(self, input_text: str):
         """
-        Asynchronously invokes the translation graph for a single input text.
+        Asynchronously invokes the graph for a single input text.
 
         Parameters
         -------
@@ -320,7 +322,7 @@ class AccidentAnalysisGraph:
 
     async def ainvoke_batch(self, input_texts: list[str]):
         """
-        Asynchronously invokes the translation graph for a batch of input texts.
+        Asynchronously invokes the graph for a batch of input texts.
 
         Parameters
         -------
@@ -335,6 +337,10 @@ class AccidentAnalysisGraph:
     
 graph = AccidentAnalysisGraph(llm_client)
 graph.build_graph()
+
+# COMMAND ----------
+
+display(Image(graph.graph.get_graph().draw_mermaid_png()))
 
 # COMMAND ----------
 
